@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F18362DA-7C8D-43D3-99BA-66378410179F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ph_GUI_V1</RootNamespace>
+    <AssemblyName>ph GUI V1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="assemFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assemFields.Designer.cs">
+      <DependentUpon>assemFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="certForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="certForm.Designer.cs">
+      <DependentUpon>certForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintLabel.Designer.cs">
+      <DependentUpon>PrintLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPYfields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPYfields.Designer.cs">
+      <DependentUpon>FPYfields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTPfields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTPfields.Designer.cs">
+      <DependentUpon>FTPfields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports.Designer.cs">
+      <DependentUpon>reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports1.Designer.cs">
+      <DependentUpon>reports1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports2.Designer.cs">
+      <DependentUpon>reports2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReworkPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReworkPage.Designer.cs">
+      <DependentUpon>ReworkPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SNfields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SNfields.Designer.cs">
+      <DependentUpon>SNfields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGUIPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGUIPage.Designer.cs">
+      <DependentUpon>MainGUIPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testForm.Designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="assemFields.resx">
+      <DependentUpon>assemFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="certForm.resx">
+      <DependentUpon>certForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintLabel.resx">
+      <DependentUpon>PrintLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPYfields.resx">
+      <DependentUpon>FPYfields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTPfields.resx">
+      <DependentUpon>FTPfields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports1.resx">
+      <DependentUpon>reports1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports2.resx">
+      <DependentUpon>reports2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReworkPage.resx">
+      <DependentUpon>ReworkPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SNfields.resx">
+      <DependentUpon>SNfields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGUIPage.resx">
+      <DependentUpon>MainGUIPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
